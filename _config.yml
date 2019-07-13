@@ -81,7 +81,7 @@ netease_comment: false
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "STUDENT OF HUFS ICE | INTERESTED IN \n [Web Backend, Distributed Multimedia Streaming, Peer to Peer Networks]"
+sidebar-about-description: "STUDENT OF HUFS ICE | ESE LAB"
 sidebar-avatar: /img/vicer_logo.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
