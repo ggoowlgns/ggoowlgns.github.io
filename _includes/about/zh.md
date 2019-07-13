@@ -13,13 +13,14 @@
 
 ##### 개발 목록
 
-- [Upgrading to Progressive Web Apps][9] · [JSConf CN 上海 2017](http://2017.jsconf.cn/)
-- Building Progressive Web Apps · [CSDI 广州 2017](http://www.csdisummit.com/)
-- The State of Progressive Web App · GDG IO Redux 北京 2017
-- 炒冷饭 · PWA 到底是个什么玩意？· Baidu HQ 北京 2017
-- [Service Worker 101][5] · GDG DevFest 北京 2016
-- [Progressive Web App，复兴序章][4] · [QCon 上海 2016](http://2016.qconshanghai.com/presentation/3111)
-- Progressive Web App 之我见 · GDG IO Redux 北京 2016
-- [CSS Still Sucks 2015][2] · 2015
-- [JavaScript 模块化七日谈][1] · 2015
+- SOL과 함께하는 OPIC(진행중) · OPIC IL(목표)
+- Partial Offloading 기법을 활용한 Edge Computing 성능 개선(진행중) · 정보처리학회 춘계학술대회 2019
+- 소상공인을 위한 전단지 안드로이드 어플 `가게를 부탁해` 웹 백엔드 & 스트리밍 서버 개발 · (주)퍼시픽나인 2019
+- Edge Computing을 활용한 무인 마켓· 졸업논문(ESE LAB) 2019
+- [VR과 360도 카메라를 이용한 실시간 스트리밍 원격제어 차량 `VICER`][5] · 2018 한이음ICT 멘토링(최종), 공개 SW개발자 대회(최종), 교내 이공계학술제(최우수상-총장상)
+- [얼굴인식을 통한 스마트 출석 `ICE SERVICE APP`][4] · 정보통신종합설계1 2018 
+- Health Care Wearable Device with Android App `To Be Ma` · 용인디지털산업진흥원 메이커톤 2017
+- [Android App `나만의 비서 : NABI`][2] · 2017 한이음ICT 멘토링
+- [Android App `Decision Maker`][1] · 2016
 
+[1]: //huangxuan.me/2015/07/09/js-module-7day/
