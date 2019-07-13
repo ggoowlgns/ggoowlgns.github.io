@@ -104,10 +104,11 @@ page-mathjax: false
 
 # Friends
 friends: [
-    {
+    #{
     #     title: "Su",
     #     href: "http://su.gallery/"
-    # },{
+    # },
+    {
         title: "HUFS ICE",
         href: "http://ice.hufs.ac.kr/"
     }
