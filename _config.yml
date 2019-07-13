@@ -112,6 +112,10 @@ friends: [
     {
         title: "HUFS ICE",
         href: "http://ice.hufs.ac.kr/"
+    },
+    {
+      title: "ESE LAB",
+      href : "http://eselab.hufs.ac.kr/"
     }
     #,{
 #         title: "前端外刊评论",
