@@ -2,7 +2,6 @@
 title: "블로그 테스트"
 date: 2019-07-13
 categories: jekyll update
-comments:true
 tags:
     - Start
     - Test
