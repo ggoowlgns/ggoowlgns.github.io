@@ -110,7 +110,8 @@ friends: [
     # },{
         title: "HUFS ICE",
         href: "http://ice.hufs.ac.kr/"
-    },{
+    }
+    #,{
 #         title: "前端外刊评论",
 #         href: "http://qianduan.guru/"
 #     },{
