@@ -61,7 +61,7 @@ kramdown:
 
 
 # Disqus settings
-disqus_username: ggoowlgns
+disqus_username: ggoowlgns-github-io-2
 
 
 # Netease settings
@@ -74,8 +74,8 @@ netease_comment: false
 # ba_track_id: [your track id]
 
 # Google Analytics
-ga_track_id: 'UA-49627206-1'            # Format: UA-xxxxxx-xx
-ga_domain: huangxuan.me
+#ga_track_id: 'UA-49627206-1'            # Format: UA-xxxxxx-xx
+#ga_domain: huangxuan.me
 
 
 
