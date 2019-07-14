@@ -1,3 +1,6 @@
+@import url(http://fonts.googleapis.com/earlyaccess/jejugothic.css);
+
+font-family: 'Jeju Gothic', serif;
 > 한국외국어대학교 정보통신공학과 4학년 재학중，  
 > (주)퍼시픽나인 에서 웹 백엔드 개발중
 
