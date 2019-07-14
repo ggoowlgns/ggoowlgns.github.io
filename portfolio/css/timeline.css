@@ -183,16 +183,16 @@ body, html {
 .i-spring:before {
 	content: "";
 	display: block;
-	width: 60px;
-	height: 60px;
+	width: 40px;
+	height: 40px;
 	background: url("../images/spring_framework.png") 50% 50% no-repeat;
 	background-size: 20px;
 }
 .i-android:before {
 	content: "";
 	display: block;
-	width: 60px;
-	height: 60px;
+	width: 40px;
+	height: 40px;
 	background: url("../images/logo-android.png") 50% 50% no-repeat;
 	background-size: 20px;
 }
