@@ -180,6 +180,54 @@ body, html {
 	background: url("../images/logo-react.png") 50% 50% no-repeat;
 	background-size: 22px;
 }
+.i-spring:before {
+	content: "";
+	display: block;
+	width: 40px;
+	height: 40px;
+	background: url("../images/spring_framework.png") 50% 50% no-repeat;
+	background-size: 22px;
+}
+.i-android:before {
+	content: "";
+	display: block;
+	width: 40px;
+	height: 40px;
+	background: url("../images/logo-android.png") 50% 50% no-repeat;
+	background-size: 22px;
+}
+.i-arduino:before {
+	content: "";
+	display: block;
+	width: 40px;
+	height: 40px;
+	background: url("../images/logo-arduino.png") 50% 50% no-repeat;
+	background-size: 22px;
+}
+.i-python3:before {
+	content: "";
+	display: block;
+	width: 40px;
+	height: 40px;
+	background: url("../images/logo-python3.png") 50% 50% no-repeat;
+	background-size: 22px;
+}
+.i-raspberrypi:before {
+	content: "";
+	display: block;
+	width: 40px;
+	height: 40px;
+	background: url("../images/logo-rasp.png") 50% 50% no-repeat;
+	background-size: 22px;
+}
+.i-unity:before {
+	content: "";
+	display: block;
+	width: 40px;
+	height: 40px;
+	background: url("../images/logo-unity.png") 50% 50% no-repeat;
+	background-size: 22px;
+}
 
 /******* Hux Branch *****/
 
