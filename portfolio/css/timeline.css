@@ -178,7 +178,7 @@ body, html {
 	width: 40px;
 	height: 40px;
 	background: url("../images/logo-react.png") 50% 50% no-repeat;
-	background-size: 22px;
+	background-size: 10px;
 }
 .i-spring:before {
 	content: "";
