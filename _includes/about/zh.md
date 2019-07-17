@@ -2,7 +2,9 @@
 > 한국외국어대학교 정보통신공학과 4학년 재학중，  
 > (주)퍼시픽나인 에서 웹 백엔드 개발중
 
-현재 WebRTC를 활용한 P2P Distributed Multimedia Streaming 기술에 관심을 가지고 있는중
+현재 관심사
+ - Edge Computing Platform
+ - WebRTC를 활용한 P2P Distributed Multimedia Streaming
 
 ##### My Programming Languages Spectrum
 
