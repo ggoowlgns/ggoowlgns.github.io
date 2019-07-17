@@ -2,7 +2,7 @@
 > 한국외국어대학교 정보통신공학과 4학년 재학중，  
 > (주)퍼시픽나인 에서 웹 백엔드 개발중
 
-##### 현재 관심사
+##### Interests
  - Edge Computing Platform
  - WebRTC를 활용한 P2P Distributed Multimedia Streaming
 
@@ -14,7 +14,7 @@
 
 
 
-##### 개발 목록
+##### Participated Projects
 
 - SOL과 함께하는 OPIC(진행중) · OPIC IL(목표)
 - Partial Offloading 기법을 활용한 Edge Computing 성능 개선(진행중) · 정보처리학회 춘계학술대회 2019
