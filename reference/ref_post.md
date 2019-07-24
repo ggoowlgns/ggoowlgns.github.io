@@ -14,6 +14,11 @@ P모군의 블로그 노트
 ###
 많을 수록 작아짐
 
+이미지 넣기
+![텍스트](이미지URL이나 이미지파일경로)
+링크 달린 이미지 넣기
+[![텍스트](http://cfile24.uf.tistory.com/image/2444873B57E257821FA2AE)](https://unity3d.com/kr)
+
 
 코드 넣기
 ```json
