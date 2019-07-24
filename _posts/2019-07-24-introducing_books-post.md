@@ -25,17 +25,17 @@ tags:
 그럼 간단하게 책 소개와 선정한 이유를 설명하겠다.  
 
 
-#자바 병렬 프로그래밍
-![](img\post_introducing_books\Java_concurrency.jpg)
+## 자바 병렬 프로그래밍
+![](../img/post_introducing_books/Java_concurrency.jpg)
 
-#함수형 사고
-![](img\post_introducing_books\functional_thinking.jpg)
+## 함수형 사고
+![](../img/post_introducing_books/functional_thinking.jpg)
 
-#알고리즘 문제 해결 전략
-![](img\post_introducing_books\algorithm_1.jpg)
+## 알고리즘 문제 해결 전략
+![](../img/post_introducing_books/algorithm_1.jpg)
 
-#Clean Code
-![](img\post_introducing_books\clean_code.jpg)
+## Clean Code
+![](../img/post_introducing_books/clean_code.jpg)
 
-#Refactoring 프로그램의 가치를 높이는 코드 정리 기술
-![](img\post_introducing_books\Refactoring.jpg)
+## Refactoring 프로그램의 가치를 높이는 코드 정리 기술
+![](../img/post_introducing_books/Refactoring.jpg)
