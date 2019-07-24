@@ -5,8 +5,8 @@ categories: 책 리뷰
 tags:
     - 책 리뷰
 ---
->나를 진화 시켜줄 6권의 책
 
+> 나를 진화 시켜줄 6권의 책
 선정한 6권의 책은 다음과 같다.
 
 
@@ -26,16 +26,18 @@ tags:
 
 
 ## 자바 병렬 프로그래밍
-![](../img/post_introducing_books/Java_concurrency.jpg)
+![](img/post_introducing_books/Java_concurrency.jpg)
+
+
 
 ## 함수형 사고
-![](../img/post_introducing_books/functional_thinking.jpg)
+![](img/post_introducing_books/functional_thinking.jpg)
 
 ## 알고리즘 문제 해결 전략
-![](../img/post_introducing_books/algorithm_1.jpg)
+![](img/post_introducing_books/algorithm_1.jpg)
 
 ## Clean Code
-![](../img/post_introducing_books/clean_code.jpg)
+![](img/post_introducing_books/clean_code.jpg)
 
 ## Refactoring 프로그램의 가치를 높이는 코드 정리 기술
-![](../img/post_introducing_books/Refactoring.jpg)
+![](img/post_introducing_books/Refactoring.jpg)
