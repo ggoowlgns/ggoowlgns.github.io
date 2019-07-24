@@ -26,18 +26,45 @@ tags:
 
 
 ## 자바 병렬 프로그래밍
-![](img/post_introducing_books/Java_concurrency.jpg)
+![](/img/post_introducing_books/Java_concurrency.jpg)
+그동안 알고 있던 병렬 프로그래밍은 `OS` 수업에서 나오는 MUTEX 혹은 SEMAPHORE 를 활용한 Multi-Threading 동기화 문제 해결이나, `Micro Processor` 수업때 배운 multi-core 상황에서 각 core 별로 병렬 처리하기 위한 어셈블리 코딩(ll 등을 활용한) 정도가 있었다.  
+하지만 실제 프로젝트나 실무에서는 `VICER`프로젝트에서 RELAYING SERVER를 구현할때 말고는 사용 한적이 없고 사용할 생각도 못해봤었다.  
+하여 성능 향상에 굉장히 중요한 부분이라고 생각하는 병렬 프로그레밍에 대한 실력을 쌓는게 중요하다고 판단하여 선정하게 되었다.
 
+###### 순간 생각나서 한 정리
+```java
+  public String notebook(){
+    String n = """
+      MUTEX : 각 Thread들의 critical section이 서로 겹치지 않게, 실행 하는 기술.
+      SEMAPHORE : 각 Thread들이 사용될때 SEMAPHORE의 카운트를 감소시키고 종료 후에는 다시 증가시켜주는 방식으로 공유 변수가 다수일때 사용한다.
+    """;
+    return n;
+  }
+```
 
 
 ## 함수형 사고
-![](img/post_introducing_books/functional_thinking.jpg)
+![](/img/post_introducing_books/functional_thinking.jpg)
+사실 함수형 프로그래밍이 어떤것인지 또 왜 필요한지에 대해 현재는 정확하게 알지는 못한다. (그냥 JS 하면서 본 정도)  
+하지만 객체지향 프로그래밍의 약간 Next Generation 느낌으로 이전부터 한번쯤은 공부해보고 싶었던 관계로 선정하였다.
+
 
 ## 알고리즘 문제 해결 전략
-![](img/post_introducing_books/algorithm_1.jpg)
+![](/img/post_introducing_books/algorithm_1.jpg)
+기본기 5대 과목중 하나인 `알고리즘`, 애석하게도 학과 커리큘럼에는 존재하지 않았다.  
+하여 Base 부터 공부시켜 주면서 알고리즘 테스트(사실 그냥 문제만 많이 풀어도 무방하다고 본다..) 준비 까지 시켜줄 책으로 선정하였다.
+
 
 ## Clean Code
-![](img/post_introducing_books/clean_code.jpg)
+![](/img/post_introducing_books/clean_code.jpg)
+6권의 책중에서 가장 기대가 큰 책이다.  
+개발자를 꿈꾸는 사람이라면 한번쯤은 접해봤을 책이자 현직자 분들 께서도 평생을 옆에 끼고 있는 책이다.  
+사실 더 말할 필요도 없는것 같지만 간단하게 설명 하겠다.  
+사실 좋은 코드란 것이 성능을 좋게하는 코드 일수도 있으나 개발이란 것이 절대로 혼자는 할수없는 작업이기에 내 코드를 동료가 파악하기 쉽게 만들어 주는것 또한 엄청난 실력이라고 생각한다. 본 책에서는 함수의 명명법, 함수의 구성, 주석 쓰는법 등 잘 구성된 가독성 높은 코드를 만들어 내기위한 기술을 알려주고 있다.  
+
 
 ## Refactoring 프로그램의 가치를 높이는 코드 정리 기술
-![](img/post_introducing_books/Refactoring.jpg)
+![](/img/post_introducing_books/Refactoring.jpg)
+이미 학교에서 리펙토링과 비슷한 부류라고 할수 있는 Design Pattern 등을 `Software Engineering` 수업을 통해 공부한다가 있다.  
+하지만 역시 실무에서 적용하기가 굉장히 힘들었다. 그 이유로는 역시 공부한 역사적인 패턴들을 알고는 있지만 각 패턴별 특징을 가슴으로 이해하지 못하기 때문이라고 생각한다.  
+하여 본질적인 문제와 해결 등과 같이 어떻게하여 그런 패턴들이 나왔는지 까지 이해를 하고자 본 책을 선정했다.
