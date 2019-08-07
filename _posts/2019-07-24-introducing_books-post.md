@@ -35,7 +35,8 @@ tags:
   public String notebook(){
     String n = """
       MUTEX : 각 Thread들의 critical section이 서로 겹치지 않게, 실행 하는 기술.
-      SEMAPHORE : 각 Thread들이 사용될때 SEMAPHORE의 카운트를 감소시키고 종료 후에는 다시 증가시켜주는 방식으로 공유 변수가 다수일때 사용한다.
+      SEMAPHORE : 각 Thread들이 사용될때 SEMAPHORE의 카운트를 감소시키고 종료
+      후에는 다시 증가시켜주는 방식으로 공유 변수가 다수일때 사용한다.
     """;
     return n;
   }
