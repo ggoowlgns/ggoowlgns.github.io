@@ -4,7 +4,6 @@ import java.util.ArrayList;
 
 public class SearchingMethods {
     int MIN =  Integer.MIN_VALUE;
-
     /**
      * ** 최악 **
      * 묶어서 합한값의 MAX
@@ -26,10 +25,10 @@ public class SearchingMethods {
                 ret = Math.max(ret,sum);
             }
         }
-
         return ret;
     }
 
+    int MIN =  Integer.MIN_VALUE;
     /**
      * **좀더 좋음**
      * 묶어서 합한값의 MAX
@@ -44,13 +43,11 @@ public class SearchingMethods {
         for(int i=0; i<N; i++){
             int sum =0;
             for(int j=i; j<N;j++){
-
                 sum += li.get(j);
 //                if(sum>ret) ret= sum;
                 ret = Math.max(ret,sum);
             }
         }
-
         return ret;
     }
 
@@ -65,26 +62,21 @@ public class SearchingMethods {
      */
     public int fastMaxSum(ArrayList<Integer> li, int lo, int hi){
         if(lo==hi) return li.get(lo);
-
         int mid = (lo+hi)/2; //중간값
-
         //왼쪽의 중 가장 큰 값
         int sum =0, left=0,right=0;
         for (int i =mid ; i>=lo;i--){
             sum += li.get(i);
             left = Math.max(sum,left);
         }
-
         sum=0; //init
         //오른쪽 가장 큰값
         for(int i=mid+1;i<=hi ;i++){
             sum += li.get(i);
             right = Math.max(right,sum);
         }
-
         //왼쪽 혹은 오른쪽 끼리 따로 계산 했을때 더큰 상황 -> 겹처지는 상황보다 독단적으로 계산할때 더 큰상황
         int single = Math.max(fastMaxSum(li, lo,mid), fastMaxSum(li, mid+1, hi));
-
         return Math.max(single, left+right);//left+right은 좌우 겹처서 계산할때 상황
     }
 
