@@ -61,7 +61,7 @@
     <![endif]-->
 
     <!-- ga & ba script hoook -->
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML'></script>
+
     {% if site.google_analytics_id %}
 
     <script>
@@ -78,5 +78,9 @@
     </script>
     {% endif %}
 
+    <!-- for mathjax from PJH -->
+    {% if page.use_math %}
+      {% include mathjax_support.html %}
+    {% endif %}
     <!-- <script></script> -->
 </head>

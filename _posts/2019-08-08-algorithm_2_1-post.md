@@ -6,6 +6,7 @@ author:     "Park Ji Hoon"
 header-img: "img/post_introducing_books/algorithm_1.jpg"
 header-mask: 0.3
 catalog:    True
+use_math: true
 tags:
     - 책 리뷰
     - 알고리즘 문제 해결 전략
@@ -110,7 +111,7 @@ private void swap(ArrayList<Integer> li ,int i, int j){
 * 시간 복잡도가 실제 수행 속도를 반영하지 못한 경우 : 최고차항의 날라간 상수값 문제
 * 반복문의 내부가 복잡한 경우 : 반복문의 내부는 단순하게(반복이 많이되는 부분일수록)
 * (\*고급)메모리 사용 패턴이 복잡한 경우 : CPU는 Main Memory 에서 가져올때 인근 메모리 까지 가져와서 Cache 메모리에 옮겨둔 뒤 처리한다. 즉, 인접한 자료들을 취급하게 되면 수행 속도는 훨씬 빨라진다.
-* 언어,컴파일러 차이 | 컴퓨터 성능 차이
+* 언어,컴파일러 차이 / 컴퓨터 성능 차이
 
 #### 실제 적용해 보기
 **문제 : 주어진 1차원 배열중 연속된 부분 구간 중 합이 최대인 구간의 합을 찾아라**
