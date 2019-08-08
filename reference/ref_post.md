@@ -2,13 +2,16 @@ P모군의 블로그 노트
 
 >처음에 시작 하는 개요 부분에 작성 : 앞에 | 생김
 
+$ ~~ $ : inline
+$$ ~~ $$ : displayMath
+
 $$그냥 식을 나타냄 :  ex) f(N) = \frac 5 3N^2 - Nlg\frac N 2 + 10^2+ 1$$  
  행렬 : $ \begin{pmatrix} -1 & a_1 & a_1^2 & \cdots & a_1^n \\
  1 & a_2 & a_2^2 & \cdots & a_2^n \\
  \vdots  & \vdots& \vdots & \ddots & \vdots \\
  1 & a_m & a_m^2 & \cdots & a_m^n   \end{pmatrix} $
 
- 
+
 log<sub>2</sub><sup>N</sup>
 N<sup>2</sup>
 ** : **굵은 글씨**

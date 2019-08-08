@@ -117,8 +117,7 @@ private void swap(ArrayList<Integer> li ,int i, int j){
 **문제 : 주어진 1차원 배열중 연속된 부분 구간 중 합이 최대인 구간의 합을 찾아라**
 $ ex) \begin{pmatrix} -7,4,-3,6,3,-8,3,4\end{pmatrix} -> Ans : (4,-3,6,3) = 10$
 
-* [%]문제 보자마자 떠오르는 생각 : 그냥 다 확인해보자..(무식..) - $ O(N^3) $
-
+1) [%]문제 보자마자 떠오르는 생각 : 그냥 다 확인해보자..(무식..) - $ O(N^3) $
 ```java
 int MIN =  Integer.MIN_VALUE;
 /**
@@ -144,8 +143,9 @@ public int inefficientMaxSum(ArrayList<Integer> li){
     return ret;
 }
 ```
-* 반복되는 계산 피하기 (마지막 for문 제거) [%]여기까진 가능 - $ O(N^2) $
 
+
+2) 반복되는 계산 피하기 (마지막 for문 제거) [%]여기까진 가능 - $ O(N^2) $
 ```java
 int MIN =  Integer.MIN_VALUE;
 /**
@@ -169,7 +169,9 @@ public int bettertMaxSum(ArrayList<Integer> li){
     return ret;
 }
 ```
-* 재귀호출, 탐욕법 이용 한 `분할정복`[%]스킬 연마 -$ O(NlgN) $  
+
+
+3) 재귀호출, 탐욕법 이용 한 `분할정복`[%]스킬 연마 -$ O(NlgN) $  
 [재귀 함수] 절반을 나누고 좌,우,좌우겹 세가지의 상황에서 Max값 return
 
 ```java
@@ -202,7 +204,9 @@ public int fastMaxSum(ArrayList<Integer> li, int lo, int hi){
     return Math.max(single, left+right);//left+right은 좌우 겹처서 계산할때 상황
 }
 ```
-* 문제의 특성을 활용한 점화식 설립 [%]지능 level -$ O(N) $  
+
+
+4)  문제의 특성을 활용한 점화식 설립 [%]지능 level -$ O(N) $  
 maxAt(i)는 0~i까지 중 최대 합 즉 점화식으로 나타내면  
 $ maxAt(i) = max(0, maxAt(i-1)) + li[i] $ 이다.
 [%] 이전게 음수가 아니기만 하면 그냥 살리는게 이득/음수면 새로 시작
