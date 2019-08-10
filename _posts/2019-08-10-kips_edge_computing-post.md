@@ -5,7 +5,7 @@ date:       2019-08-10
 author:     "Park Ji Hoon"
 header-img: "img/post_introducing_books/algorithm_1.jpg"
 header-mask: 0.3
-catalog:    True
+catalog:    False
 use_math: true
 tags:
     - KIPS
@@ -17,7 +17,7 @@ tags:
 
 ## <center>엣지 컴퓨팅 기반 무인 마켓 사례 연구: 자원 분배 효율성 극대화</center>
 
-#####<center>박지훈*, 류형오**, 김경률*, 김세화*<br> \*한국외국어대학교 정보통신공학과 <br> e-mail:ggoowlgns@gmail.com </center>
+##### <center>박지훈*, 류형오**, 김경률*, 김세화*<br> \*한국외국어대학교 정보통신공학과 <br> e-mail:ggoowlgns@gmail.com </center>
 <br>
 ##### <center>Edge Computing-Based Unmanned Market Case <br> Study: Maximizing Resource Distribution </center>
 
@@ -25,7 +25,7 @@ tags:
 <br>
 
 ###### <center>요  약</center>
-###### <center> ~~~asda </center>
+###### <center>  </center>
 
 
 
