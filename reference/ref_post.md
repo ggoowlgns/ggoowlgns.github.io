@@ -1,5 +1,10 @@
 P모군의 블로그 노트
 
+
+<center>가운데</center>  
+<div style="text-align: left"> 왼쪽 </div>
+<div style="text-align: right"> 오른쪽 </div>
+
 >처음에 시작 하는 개요 부분에 작성 : 앞에 | 생김
 
 $ ~~ $ : inline
