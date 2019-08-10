@@ -23,7 +23,7 @@ tags:
 
 <center>
 <h5>박지훈*, 류형오**, 김경률*, 김세화*<br>
-*한국외국어대학교 정보통신공학과<br>
+\*한국외국어대학교 정보통신공학과 <br>
 e-mail:ggoowlgns@gmail.com
 </h5>
 </center>
@@ -38,14 +38,16 @@ Study: Maximizing Resource Distribution
 
 <center>
 Ji-Hoon Park*, Hyeong-Oh Ryu**, Kyung-Ryul Kim*, Sae-Hwa Kim*<br>
-*Dept of Information Communications Engineering, Hankuk Universitiy of
+\*Dept of Information Communications Engineering, Hankuk Universitiy of
 Foreign Studies
 </center>
 
 <br>
 
 <center>
-<h5>요 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 약</h5>
+<h5>
+요 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 약
+</h5>
 </center>
 
 <center>
