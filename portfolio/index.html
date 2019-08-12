@@ -12,6 +12,10 @@ layout: default
 		<title>Hux - Timeline</title>
 		<link rel="stylesheet" type="text/css" href="css/timeline.css" />
 		<script src="js/modernizr.custom.js"></script>
+		<link href="http://vjs.zencdn.net/c/video-js.css" rel="stylesheet" />
+		<script src="http://vjs.zencdn.net/c/video.js"></script>
+
+
 	</head>
 	<body>
 		<div class="container" style="margin:0;padding:0;width:100%;">
@@ -41,32 +45,46 @@ layout: default
 					<li>
 						<div class="cbp_tmlabel">
 							<!-- 제목 -->
+							<h2 id="boxoffice">(주)퍼시픽 나인</h2>
 							<h2 id="boxoffice">AI 상권분석 및 자영업 창업 지원 챗봇 : 가게를 부탁해</h2>
 							<time>2019.01 ~ </time>
-							<img src="images/hufsgo_deploymentD.png">
-							<img src="images/hufsgo_activityD_result.JPG">
-							<img src="images/hufsgo_cdf_result.JPG">
-							<iframe width="560" height="315" src="https://www.youtube.com/embed/XOmQtkOHeqk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							<img src="images/adflyer_req.png">
+							<img src="images/adflyer_adminWEB.JPG">
+
+							<div style="width:200px; height:380px;  float:left; margin-right:10px;">
+								<h3 id="boxoffice">소상공인 어플</h3>
+								<video width="180" height="320" controls="controls" class="video-js vjs-default-skin" data-setup="{}" style="float:left;">
+
+							    <source src="videos/adflyer_forCEO.mp4" type="video/mp4" />
+
+								</video>
+							</div>
+							<div style="width:200px; height:380px;  float:left;">
+								<h3 id="boxoffice">고객 어플</h3>
+								<video width="180" height="320" controls="controls" class="video-js vjs-default-skin" data-setup="{}" style="float:right;">
+
+									<source src="videos/adflyer_forCLIENT.mp4" type="video/mp4" />
+
+								</video>
+							</div>
+
+
+							<img src="images/adflyer_ai_tech.JPG">
 							<ul>
 								<li>
-									무인 마켓 시장의 선두 주자인 Amazon Go를 벤치마킹하고 Edge Computing Platform을 도입한 프로젝트이다.
-									여러개의 Terminal Device 에서 촬영된 정보와 센싱 데이터들을 전부 Edge Server로 전송하고 Edge Server에서는 각종 데이터들을 조합하여
-									Object Detection, Face Racognition, QR-Scanner, Data Fusion 등의 작업을 실행한다. Cloud Server에서는 여러 Edge Server로 부터 고객정보, 구매 정보를 수집하여 데이터 분석(러닝-학습)하고 결과물을 다시 모든 Edge Server로 전송해준다.<br>
-									Edge Computing platform의 도입으로 1)사용자 응답 시간 감소, 2)고객 사생활 보호, 3)Masking cloud outage의 실현을 가능하게 하였다. <br>
-<<<<<<< HEAD
 
-=======
-									자세한 기술 설명은 아래 DOC 링크에서 확인 바란다.<br><br>
-									[HUFS GO] [팀장: 박지훈, 팀원: 류형오, 유정훈]
->>>>>>> c2fef26fc4606b5ebbf809df1fdf1de57e12a331
+									App은 소상공인용, 고객용으로 구성되어 있으며 챗봇을 이용해 소상공인에게 AI 분석을 통해 도출된 창업 정보를 제공한다. <br>
+									고객들은 챗봇을 통해 다양한 지역 정보 및 광고 서비스를 제공받는다.<br>
+ 									소상공인이 고객들에게 제공하는 CF(VOD), live 광고 서비스 개발에 참여 중이다.
 								</li>
 							<li class="skill">
 								<span class="i-android"></span>
 								<span class="i-spring"></span>
+								<span><b>JS</b></span>
 								<span class="i-python3"></span>
 
 								<span class="link">
-									<a target="_blank" href="https://github.com/ggoowlgns/VICER_360ANDROID">HUFS GO DOC REPO</a>
+									<a target="_blank" href="https://github.com/ggoowlgns/VICER_360ANDROID">ADFLYER HOMEPAGE</a>
 								</span>
 							</li>
 						</ul>
@@ -97,7 +115,7 @@ layout: default
 								<span class="i-python3"></span>
 
 								<span class="link">
-									<a target="_blank" href="https://github.com/ggoowlgns/VICER_360ANDROID">HUFS GO DOC REPO</a>
+									<a target="_blank" href="https://github.com/ggoowlgns/ggoowlgns.github.io/tree/master/docs/hufsgo">HUFS GO DOC REPO</a>
 								</span>
 							</li>
 						</ul>
@@ -118,7 +136,11 @@ layout: default
 							<ul>
 								<li>
 									대리운전기사들의 편의를 도모하고, 안정성을 확보하기 위해서 app device를 대리운전기사에게 제공한다. 운전기사는 컨트롤러를 사용하여 실내에서 원격으로 차량을 제어한다. 또한 운전석에서 보는 것과 같은 시야를 VR 어플리케이션을 통하여 제공받는다. 이를 통하여 실제 운전하는 것과 같은 효과를 얻을 수 있다.
-									360도 카메라는 삼성 "Gear360"를, VR 장비와 이에 부착되는 핸드폰으로는 "삼성 기어 VR"과 "삼성 갤럭시 8" 를 사용하였다.<br><br>
+									360도 카메라는 삼성 "Gear360"를, VR 장비와 이에 부착되는 핸드폰으로는 "삼성 기어 VR"과 "삼성 갤럭시 8" 를 사용하였다.<br>
+									RTMP 를 참조하여 응용 프로토콜(TCP based)을 자체 개발하였다.
+ 									사용자는 VR 장비에 부착된 App을 통해 360도 영상을 실시간으로 제공받는다.
+									실제 운전이 가능하도록 핸들, 페달을 자체 제작하였고 영상정보를 통해 차량을 제어한다.<br><br>
+
 									결과 :2018 한이음ICT 멘토링(최종), 공개 SW개발자 대회(최종), 이공계학술제(최우수상-총장상) <br><br>
 
 									[VICER] [팀장: 박지훈, 팀원: 나윤호, 유한석, 류형오]
