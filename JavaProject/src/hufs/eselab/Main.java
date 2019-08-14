@@ -58,9 +58,11 @@ public class Main {
         }
         System.out.println("i: "+i+"j : "+j);*/
 
+
+
         //입,출력 BufferedReader
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        BruteForce bruteForce = new BruteForce();
+
 
         try {
             int num_case = Integer.parseInt(br.readLine());
@@ -78,15 +80,16 @@ public class Main {
                     p_int[j] = Integer.parseInt(pairs[j]); //그냥 str array to int array
 
                 }
-//                for(int k : p_int) {
-//                    System.out.println(k);
-//                }
-                ret[i] = bruteForce.countPairing(stu_int,p_int);
+
+                BruteForce bruteForce = new BruteForce(p_int,stu_int[0]);
+                boolean[] taken = new boolean[stu_int[0]];
+                ret[i] = bruteForce.countPairing(taken);
+
 
             }
-//            for(int r : ret) {
-//                System.out.println(r);
-//            }
+            for(int r : ret) {
+                System.out.println(r);
+            }
         } catch (IOException e) {
             e.printStackTrace();
         }
