@@ -107,22 +107,9 @@ public class BruteForce {
         boolean finished = true;
         int ret = 0;
 
-        //남은 학생들중 가장 번호가 빠른 학생을 찾는다.
-        int firstFree = -1;
-        for (int i = 0; i < n; i++) {
-            if (!taken[i]) {
-                firstFree = i;
-                break;
-            }
-        }
-
-        if (firstFree == -1) return 1; //모든 학생의 짝이 결정된 상황으로 1 을 ret 즉 횟수 하나를 올려준다.
-
 
         //i번째 학생이 이미 짝을 찾으면 false
-        for (int i = 0; i < n; i++) if (!taken[i]) finished = false;
-
-
+//        for (int i = 0; i < n; i++) if (!taken[i]) finished = false;
         //서로 친구인 두 학생 찾기 -> 중복되는걸 찾지 못함
 //        for(int i = 0; i<n ; i++){
 //            for(int j=0; j<n ; j++){
@@ -135,6 +122,17 @@ public class BruteForce {
 //            }
 //        }
 
+
+        //남은 학생들중 가장 번호가 빠른 학생을 찾는다.
+        int firstFree = -1;
+        for (int i = 0; i < n; i++) {
+            if (!taken[i]) {
+                firstFree = i;
+                break;
+            }
+        }
+
+        if (firstFree == -1) return 1; //모든 학생의 짝이 결정된 상황으로 1 을 ret 즉 횟수 하나를 올려준다.
         for (int pair_with = firstFree + 1; pair_with < n; pair_with++) {
             if (!taken[pair_with] && !taken[firstFree] && areFriends[firstFree][pair_with]) {
                 taken[pair_with] = taken[firstFree] = true;
@@ -206,9 +204,8 @@ public class BruteForce {
             {{0,0}, {1,0}, {1,1}},
             {{0,0}, {1,0}, {1,-1}}
     };
-
     /**
-     *
+     * 겹치거나, 검은 칸을 덮을때 false return
      * @param board 판
      * @param h 높이 idx
      * @param w 너비 idx
@@ -227,6 +224,12 @@ public class BruteForce {
 
         return ok;
     }
+
+    /**
+     * 조각
+     * @param board 판
+     * @return 모든 빈 칸을 덮을 수 있는 방법의 수
+     */
     public int cover(int[][] board){
         int h = -1 , w = -1;
 
