@@ -48,8 +48,8 @@ Brute Force Search (완전 탐색) : 모든 경우를 다 시도해보는 방법
 5x5 크기의 알파벳 격자를 가지고 하는 게임이다.  
 상하좌우/대각선으로 인접한 칸들을 이동하면서 입력한 글자의 존재 유무를 찾는 문제이다.  
 한 글자가 두번 이상 사용될수도 있다.  
-$ex)${: .center}  
-![](/img/post_algorithm/boggle_ex.png){: width="20%" height="20%"}{: .center}  
+$ex)$  
+![](/img/post_algorithm/boggle_ex.png){: width="40%" height="40%"}{: .center}  
 
 
 **문제의 분할**
@@ -281,8 +281,8 @@ H x W 크기의 게임판이 있다.
 블록들은 자유롭게 회전이 가능하지만 겹치거나 검은 칸을 덮거나, 게임판 밖으로 나가는 것은 안된다.  
 덮는 방법의 수를 출력하시오.  
 
-$ex)$  {: .center}
-![](/img/post_algorithm/game_board_ex.png){: width="50%" height="50%"}{: .center}  
+$ex)$  
+![](/img/post_algorithm/game_board_ex.png){: width="80%" height="80%"}{: .center}  
 **입력**  
 
 ```bash
