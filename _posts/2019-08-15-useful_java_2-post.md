@@ -43,7 +43,7 @@ return 0;
 ```
 
 
-JAVA에는 goto가 없지만 해당 루프에 label을 달아주는 느낌으로 goto와 비슷한 느낌을 살릴 수가 있다.  
+JAVA에는 goto가 없지만 `해당 루프에 label을 달아주는 느낌`으로 goto와 비슷한 느낌을 살릴 수가 있다.  
 위의 코드를 JAVA로 비슷하게 바꾸면 아래와 같다.
 ##### JAVA Language
 ```java
@@ -61,8 +61,10 @@ public static void main(String[] args){
 ```
 
 
-`이중 루프 뿐만 아니라 중첩시켜도 Label만 잘 설정 해주면 어떤식으로도 구현할수 있다.`
-$End $ $of $ $Posting $ 
+`이중 루프 뿐만 아니라 중첩시켜도 Label만 잘 설정 해주면 어떤식으로도 구현할수 있다.`  
+
+  
+$End $ $of $ $Posting $
 
 
 #### Reference
