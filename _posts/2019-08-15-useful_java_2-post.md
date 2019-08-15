@@ -21,6 +21,8 @@ tags:
 예를들어, 2차원이상의 Matrix에서 원하는 값을 찾았을때 탐색작업을 중단하는 상황은 매우 흔한 상황으로 답답함을 경험 한적이 있을것이다.
 
 C계열의 언어 같은 경우에는 Assembly 언어처럼 Instruction을 원하는 위치로 이동할수가 있다.(goto 등)  
+
+##### C Language
 ```c
 #include <stdio.h>
 int main(){
@@ -40,8 +42,10 @@ return 0;
 }
 ```
 
-JAVA에는 goto가 없지만 해당 루프에 label을 달아주는 느낌으로 goto와 비슷한 느낌을 살릴 수가 있다.
 
+JAVA에는 goto가 없지만 해당 루프에 label을 달아주는 느낌으로 goto와 비슷한 느낌을 살릴 수가 있다.  
+위의 코드를 JAVA로 비슷하게 바꾸면 아래와 같다.
+##### JAVA Language
 ```java
 public static void main(String[] args){
     int[][] matrix = {Something};
@@ -55,6 +59,10 @@ public static void main(String[] args){
     }
 }
 ```
+
+
+`이중 루프 뿐만 아니라 중첩시켜도 Label만 잘 설정 해주면 어떤식으로도 구현할수 있다.`
+$End $ $of $ $Posting $ 
 
 
 #### Reference
