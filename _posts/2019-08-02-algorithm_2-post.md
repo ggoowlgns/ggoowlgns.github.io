@@ -12,7 +12,7 @@ tags:
 
 ---
 > 알고리즘 평가의 꽃 시간복잡도(feat. 공간복잡도)
-> [Algorithm 소스 GIT][https://github.com/ggoowlgns/ggoowlgns.github.io/tree/master/JavaProject/src/hufs/eselab]
+> [Algorithm 소스 GIT][1]
 `책에서는 C++로 코드를 제시했지만 필자는 JAVA 개발자 이므로 JAVA 코드로 게시하겠다.`
 
 ## 개관
@@ -145,3 +145,8 @@ private int selectMenu(ArrayList<Integer> menu, int food){
 ```
 위 프로그램은 모든 답을 한 번씩 다 확인하기 때문에, 2<sup>M</sup>번 반복을 하게되고 반복마다 canEverybodyEat()이 돌아간다.(구현은 하지 않았지만 수행시간을 N*M이라 가정한다.)  
 즉, 전체 수행시간은 `N*M*2^M`  이다.
+
+
+
+
+[1]:[https://github.com/ggoowlgns/ggoowlgns.github.io/tree/master/JavaProject/src/hufs/eselab]

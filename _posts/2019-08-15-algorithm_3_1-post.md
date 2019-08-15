@@ -15,7 +15,7 @@ tags:
 ---
 > 알고리즘 설계 시작 : 완전 탐색(feat. 재귀 함수)  
 > [%] 의 표시 : 필자의 의견
-> [Algorithm 소스 GIT] [https://github.com/ggoowlgns/ggoowlgns.github.io/tree/master/JavaProject/src/hufs/eselab]
+> [Algorithm 소스 GIT][1]
 ```
 3
 2 1
@@ -25,3 +25,5 @@ tags:
 6 10
 0 1 0 2 1 2 1 3 1 4 2 3 2 4 3 4 3 5 4 5
 ```
+
+[1]:[https://github.com/ggoowlgns/ggoowlgns.github.io/tree/master/JavaProject/src/hufs/eselab]

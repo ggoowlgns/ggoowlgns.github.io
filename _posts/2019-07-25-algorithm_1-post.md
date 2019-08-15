@@ -11,7 +11,7 @@ tags:
     - 알고리즘 문제 해결 전략
 ---
 > 다양한 분야의 개발자가 존재하지만, 이런 분야 간의 차이를 뛰어넘는 좋은 개발자의 조건이 존재할까?
-> [Algorithm 소스 GIT][https://github.com/ggoowlgns/ggoowlgns.github.io/tree/master/JavaProject/src/hufs/eselab]
+> [Algorithm 소스 GIT][1]
 
 ## 문제 해결
 * **문제 해결 능력 이란?**
@@ -163,3 +163,7 @@ tags:
   * 절대 오차 : 차이가 일정 수치보다 작으면 같다고 본다. (abs(a-b) <1e-10 )
   * 상대 오차 : 오차 한도를 미리 정할수 없을때 사용. (abs(a-b)<=1e-8*max(abs(a),abs(b)) )
   * 둘다 사용하는게 좋겠다.
+
+
+
+[1]:[https://github.com/ggoowlgns/ggoowlgns.github.io/tree/master/JavaProject/src/hufs/eselab]
