@@ -98,16 +98,19 @@ class BruteForce{
 
 public static void main(String[] args){
     char[][] st = {{'u','r','l','p','m'},
-                  {'x','p','r','e','t'},
-                  {'g','i','a','e','t'},
-                  {'x','t','n','z','y'},
-                  {'x','o','q','r','s'}};
+                    {'x','p','r','e','t'},
+                    {'g','i','a','e','t'},
+                    {'x','t','n','z','y'},
+                    {'x','o','q','r','s'}};
+                    
     BruteForce bf = new BruteForce(st);
     boolean b = false;
     loop:
     for(int i=0;i<st[0].length;i++){
         for(int j=0;j<st.length;j++){
+
             b = bf.hasWord(i,j,"pretty");
+
             if(b) { break loop;}
         }
     }
