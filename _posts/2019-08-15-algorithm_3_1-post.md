@@ -13,9 +13,10 @@ tags:
     - brute force search
 
 ---
-> 알고리즘 설계 시작 : 완전 탐색(feat. 재귀 함수)  
-> [%] 의 표시 : 필자의 의견
-> [Algorithm 소스 GIT][1]
+> 알고리즘 설계 시작 : 완전 탐색(feat. 재귀 함수)   
+> [%] 의 표시 : 필자의 의견  
+> [Algorithm 소스 GIT][1]  
+
 ```
 3
 2 1
