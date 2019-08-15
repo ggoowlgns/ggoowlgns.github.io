@@ -63,6 +63,7 @@ $ex)${: .center}
 
 입력이 잘못되거나 범위에서 벗어난 경우도 기저 사례로 택해서 제일 처음에 제거 하는 습관을 들이면 좋다.
 구현하면 아래와 같다.
+
 ```java
 class BruteForce{
   char[][] m = {};
@@ -96,7 +97,7 @@ class BruteForce{
 
 
 public static void main(String[] args){
-  char[][] st = {{'u','r','l','p','m'},
+    char[][] st = {{'u','r','l','p','m'},
                   {'x','p','r','e','t'},
                   {'g','i','a','e','t'},
                   {'x','t','n','z','y'},
@@ -112,6 +113,7 @@ public static void main(String[] args){
     }
 }
 ```
+
 **시간 복잡도**
 8개의 단계 - 상하좌우/대각선 을 각 func 당 8번 돌린다.  
 => n : 입력 단어의 길의  $O(8^n)$
@@ -166,7 +168,6 @@ public static void main(String[] args){
 - 모든 학생이 짝지어지면 return 1  
 
 ```java
-
 public BruteForce{
     int n;
     boolean areFriends[][] = new boolean[10][10];
