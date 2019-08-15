@@ -38,26 +38,23 @@ public class Main {
         System.out.println(sc.fastMaxSum(al_2,0,al_2.size()-1));
         System.out.println(sc.fastestMaxSum(al_2));
 
-        /*char[][] st = {{'u','r','l','p','m'},
-                        {'x','p','r','e','t'},
-                        {'g','i','a','e','t'},
-                        {'x','t','n','z','y'},
-                        {'x','o','q','r','s'}};
-        BruteForce bf = new BruteForce(st);
-        boolean b = false;
-        int i=0;
-        int j=0;
-
-        loop:
-        for(i=0;i<st[0].length;i++){
-            for(j=0;j<st.length;j++){
-
-                b = bf.hasWord(i,j,"agdgagg");
-
-                if(b) { break loop;}
-            }
-        }
-        System.out.println("i: "+i+"j : "+j);*/
+//        char[][] st = {{'u','r','l','p','m'},
+//                        {'x','p','r','e','t'},
+//                        {'g','i','a','e','t'},
+//                        {'x','t','n','z','y'},
+//                        {'x','o','q','r','s'}};
+//        BruteForce bf = new BruteForce(st);
+//        boolean b = false;
+//        loop:
+//        for(int i=0;i<st[0].length;i++){
+//            for(int j=0;j<st.length;j++){
+//
+//                b = bf.hasWord(i,j,"agdgagg");
+//
+//                if(b) { break loop;}
+//            }
+//        }
+//        System.out.println("i: "+i+"j : "+j);
 
 
 
