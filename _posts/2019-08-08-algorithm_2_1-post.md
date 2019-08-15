@@ -240,4 +240,4 @@ int fastestMaxSum(ArrayList<Integer> li){
 * NP (non-Polynomial)문제 : 답이 주어졌을때 이것이 정답인지를 다항 시간 내에 확인할 수 있는 문제
 
 
-[1]:[https://github.com/ggoowlgns/ggoowlgns.github.io/tree/master/JavaProject/src/hufs/eselab]
+[1]: https://github.com/ggoowlgns/ggoowlgns.github.io/tree/master/JavaProject/src/hufs/eselab

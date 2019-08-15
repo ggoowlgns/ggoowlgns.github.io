@@ -90,6 +90,6 @@ Scanner의 버퍼 사이즈는 1024 chars, BufferedReader의 버퍼 사이즈는
  - [Scanner와 BufferedReader 차이][3]
 
 
-[1]:[https://coding-factory.tistory.com/251]
-[2]:[https://www.geeksforgeeks.org/difference-between-scanner-and-bufferreader-class-in-java/]
-[3]:[https://cocomo.tistory.com/507]
+[1]:https://coding-factory.tistory.com/251
+[2]:https://www.geeksforgeeks.org/difference-between-scanner-and-bufferreader-class-in-java/
+[3]:https://cocomo.tistory.com/507
