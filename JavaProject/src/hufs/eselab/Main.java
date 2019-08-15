@@ -6,6 +6,7 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.StringTokenizer;
 
 public class Main {
 
@@ -61,7 +62,7 @@ public class Main {
 
 
         //입,출력 BufferedReader
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        /*BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
 
         try {
@@ -90,6 +91,65 @@ public class Main {
             for(int r : ret) {
                 System.out.println(r);
             }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }*/
+        /*BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        try {
+            int num_case = Integer.parseInt(br.readLine());
+            int[] ret = new int[num_case];
+
+            for(int i=0 ;i<num_case;i++){
+                String[] H_W =  br.readLine().split(" ");
+                int[] H_W_int = new int[H_W.length];
+                for(int j=0;j<H_W.length;j++){
+                    H_W_int[j] = Integer.parseInt(H_W[j]); //그냥 str array to int array
+                }
+
+                String[][] blocks  = new String[H_W_int[0]][H_W_int[1]];
+                for(int j =0 ;j<H_W_int[0]; j++) {
+                    blocks[j] = br.readLine().split("");
+                }
+                //잘들어왔나 블록 출력
+//                for(String[] block_line : blocks){
+//                    for (String block : block_line){
+//                        System.out.print(block);
+//                    }
+//                    System.out.println();
+//                }
+
+                BruteForce bruteForce = new BruteForce();
+
+                int[][] board;
+
+                board = new int[blocks.length][blocks[0].length];
+                for(int x=0 ; x<blocks.length ; x++){
+                    for(int y=0 ; y<blocks[0].length ; y++){
+                        if(blocks[x][y].equals("#")) board[x][y] = 1;
+                    }
+                }
+                ret[i] = bruteForce.cover(board);
+
+
+            }
+
+            for(int r : ret) {
+                System.out.println(r);
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }*/
+
+
+        BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
+        try {
+            String read_line = bf.readLine();
+            StringTokenizer stringTokenizer = new StringTokenizer(read_line);
+            String a = (String)stringTokenizer.nextToken();
+            String b = (String)stringTokenizer.nextToken();
+            System.out.println(""+a +" "+ b);
+            String[] s_split = read_line.split(" ");
+            System.out.println(""+s_split[0] +" "+ s_split[1]);
         } catch (IOException e) {
             e.printStackTrace();
         }

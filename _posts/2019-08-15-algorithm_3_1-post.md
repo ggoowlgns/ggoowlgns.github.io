@@ -1,6 +1,6 @@
 ---
 title:      "알고리즘 문제 해결 전략 : (3) 알고리즘 설계 패러다임 - 무식하게 풀기-1"
-subtitle:   "Brute force Search (완전 탐색) Algorithm"
+subtitle:   "Brute Force Search (완전 탐색) Algorithm"
 date:       2019-08-15
 author:     "Park Ji Hoon"
 header-img: "img/post_introducing_books/algorithm_1.jpg"
@@ -10,11 +10,12 @@ use_math: true
 tags:
     - 책 리뷰
     - 알고리즘 문제 해결 전략
+    - brute force search
 
 ---
-> 알고리즘 설계 시작 : 완전 탐색(feat. 재귀 함수)
-[%] 의 표시 : 필자의 의견
-
+> 알고리즘 설계 시작 : 완전 탐색(feat. 재귀 함수)  
+> [%] 의 표시 : 필자의 의견
+> [Algorithm 소스 GIT] [https://github.com/ggoowlgns/ggoowlgns.github.io/tree/master/JavaProject/src/hufs/eselab]
 ```
 3
 2 1

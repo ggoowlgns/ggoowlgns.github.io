@@ -14,7 +14,7 @@ tags:
 ---
 > 알고리즘 평가의 꽃 시간복잡도(feat. 공간복잡도)
 [%] 의 표시 : 필자의 의견
-
+> [Algorithm 소스 GIT][https://github.com/ggoowlgns/ggoowlgns.github.io/tree/master/JavaProject/src/hufs/eselab]
 ## 시간 복잡도
 시간 복잡도(time complexity)란 기본적인 연산의 수를 입력의 크기에 대한 함수로 표현한것 (기본적인 연산 : 더 작게 쪼갤 수 없는 최소 크기의 연산)  
 * 시간 복잡도가 높다 : 입력의 크기가 증가할때 수행 시간이 더 빠르게 증가한다.  
