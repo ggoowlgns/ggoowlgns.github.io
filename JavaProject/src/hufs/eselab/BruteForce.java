@@ -55,13 +55,11 @@ public class BruteForce {
         if (m[x][y] != s.charAt(0)) {
             return false;
         }
-
         if (s.length() == 1) return true;
 
         for (int i = 0; i < dx.length; i++) {
             int nextX = x + dx[i];
             int nextY = y + dy[i];
-
             if (hasWord(nextX, nextY, s.substring(1))) return true;    //String.substring(beginidx i)
         }
         return false;
