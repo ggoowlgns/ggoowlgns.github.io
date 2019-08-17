@@ -18,12 +18,13 @@ tags:
 ## <center>엣지 컴퓨팅 기반 무인 마켓 사례 연구: 자원 분배 효율성 극대화</center>
 
 <!-- ##### <center>박지훈*, 류형오*, 김경률*, 김세화*<br> *한국외국어대학교 정보통신공학과 <br> e-mail:ggoowlgns@gmail.com </center> -->
-<p style="color:black; font-size:50%;" align="center"> 박지훈*, 류형오*, 김경률*, 김세화*</p>
-<p style="color:black; font-size:50%;" align="center"> *한국외국어대학교 정보통신공학과</p>
-<p style="color:black; font-size:50%;" align="center"> e-mail:ggoowlgns@gmail.com</p>
-<center>Edge Computing-Based Unmanned Market Case <br> Study: Maximizing Resource Distribution </center>
+<p style="color:black; font-size:100%;" align="center"> 박지훈*, 류형오*, 김경률*, 김세화*<br>
+*한국외국어대학교 정보통신공학과 <br>
+ e-mail:ggoowlgns@gmail.com</p>
 
+<center>Edge Computing-Based Unmanned Market Case <br> Study: Maximizing Resource Distribution </center>
 <center> Ji-Hoon Park*, Hyeong-Oh Ryu*, Kyung-Ryul Kim*, Saehwa Kim*<br> *Dept of Information Communications Engineering, Hankuk Universitiy of Foreign Studies </center>
+
 <!--
 최근 마켓 관련 기업들이 각기 다른 기술력을 지닌 무인 마켓들을 시장에 내놓고 있다. 그중에서 무인 마켓 이라는 이름
 이 가장 걸맞는 Amazon사의 Amazon Go를 벤치마킹 하였다. 이때 요구되는 기술인 Object Tracking, Object Detection은
