@@ -282,8 +282,8 @@ Committer : 코드르 리뷰, 머지할수 있는 권한을 가진 사람
 -  프로젝트 관련 개발에 얼마나 관심이 있는지를 보이자  
 
 
-[%] 기념품 샷 : #네이버가 채고시다  
-![Naver OpenClass Product](img/post_naver/naver_openClass_product.jpg)
+`[%] 기념품 샷 : #네이버가 채고시다`  
+![Naver OpenClass Product](../img/post_naver/naver_openClass_product.jpg)
 
 
 
