@@ -1,5 +1,5 @@
 ---
-title:      "개발 노트 : NAVER - Open Class (작성중)"
+title:      "개발 노트 : NAVER - Open Class"
 subtitle:   "네이버 채용설명회"
 date:       2019-08-21
 author:     "Park Ji Hoon"
@@ -283,15 +283,15 @@ Committer : 코드르 리뷰, 머지할수 있는 권한을 가진 사람
 
 
 `[%] 기념품 샷 : #네이버가 채고시다`  
-![Naver OpenClass Product](../img/post_naver/naver_openClass_product.jpg)
+![Naver OpenClass Product](/img/post_naver/naver_openClass_product.jpg)
 
 
 
 
 $End $ $of $ $Posting $
 
-#### Reference
- - [][1]
+<!-- #### Reference
+ - [][1] -->
 
 
-[1]:
+<!-- [1]: -->
