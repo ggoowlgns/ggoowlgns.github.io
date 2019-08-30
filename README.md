@@ -10,6 +10,6 @@
 #### 공부한 내용들
 #### 알고리즘(코딩 시험)
 
-$Powered$   $by$ [$Hux Blog$][1]
+$Powered $   $by $ [$Hux Blog $][1]
 
 [1]: http://huangxuan.me/
