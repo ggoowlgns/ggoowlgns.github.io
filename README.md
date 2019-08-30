@@ -8,8 +8,13 @@
 #### 포트폴리오, 이력서
 #### 책 리뷰
 #### 공부한 내용들
-#### 알고리즘(코딩 시험)
+#### 알고리즘(코딩 시험)  
 
-$Powered $   $by $ [$Hux Blog $][1]
+
+
+$Powered $   $by $ [$Hux Blog $][1]  
+
+
+$End $ $of $ $Posting $
 
 [1]: http://huangxuan.me/
