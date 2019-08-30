@@ -12,9 +12,7 @@
 
 
 
-$Powered $   $by $ [$Hux Blog $][1]  
+*Powered by [Hux Blog][1]*  
 
-
-$End $ $of $ $Posting $
 
 [1]: http://huangxuan.me/
