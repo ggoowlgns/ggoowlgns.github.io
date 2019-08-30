@@ -1,6 +1,6 @@
 ---
-title:      "개발 노트 : Android - Kakko Map (작성중)"
-subtitle:   "Developing with Kakko Map"
+title:      "개발 노트 : Android - Kakao Map (작성중)"
+subtitle:   "Developing with Kakao Map"
 date:       2019-08-16
 author:     "Park Ji Hoon"
 header-img: "img/java_back.png"
