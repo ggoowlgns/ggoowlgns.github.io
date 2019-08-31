@@ -13,7 +13,8 @@ tags:
 
 
 ---
->
+> git repo  
+> https://github.com/ggoowlgns/android_kakao_map_example
 
 Fragment 생성시 자동 생성되는 onCreateView에서 view통해서 참조해서 findViewById 를 한다.
 
@@ -32,7 +33,8 @@ private View view;
 
 View
 
-
+###### 실행 화면
+![version 1.0](/img/post_android/test_1.mp4)
 
 $End $ $of $ $Posting $
 
