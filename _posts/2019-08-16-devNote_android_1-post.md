@@ -34,7 +34,7 @@ private View view;
 View
 
 ###### 실행 화면
-![version 1.0](/img/post_android/test_1.mp4)
+![version 1.0](/img/post_android/test_1.gif)
 
 $End $ $of $ $Posting $
 
