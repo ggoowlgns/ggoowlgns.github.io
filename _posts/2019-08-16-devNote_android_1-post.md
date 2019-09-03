@@ -13,8 +13,9 @@ tags:
 
 
 ---
-> [git repo](https://github.com/ggoowlgns/android_kakao_map_example)  
-> [https://github.com/ggoowlgns/android_kakao_map_example](https://github.com/ggoowlgns/android_kakao_map_example)
+> [git private repo](https://github.com/ggoowlgns/android_kakao_map_example)  
+> [https://github.com/ggoowlgns/android_kakao_map_example](https://github.com/ggoowlgns/android_kakao_map_example)  
+> 소스를 원하시는 분은 댓글 달아주세요!
 
 Fragment 생성시 자동 생성되는 onCreateView에서 view통해서 참조해서 findViewById 를 한다.
 
