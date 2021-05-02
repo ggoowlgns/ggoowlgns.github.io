@@ -1,13 +1,12 @@
-
-> 한국외국어대학교 정보통신공학과 4학년 재학중，  
-> (주)퍼시픽나인 에서 웹 백엔드, 멀티미디어 스트리밍 서버 개발중  
+> 넷마블 에서 백엔드개발자로 근무중  
 > e-mail : ggoowlgns@gmail.com  
-> phone : 010-9910-4510
 
 ##### Interests
- - Edge Computing Platform
- - P2P Distributed Multimedia Streaming
- - WebRTC
+ - kubernetes
+ - CI/CD
+ - Java
+ - Spring Boot
+ - Netty
 
 
 ##### My Programming Languages Spectrum
@@ -18,7 +17,7 @@
 
 
 
-##### Participated Projects
+##### 2016 ~ 2019 대학생활 Projects : All Deprecated
 
 - 소상공인을 위한 전단지 안드로이드 어플 `가게를 부탁해`
   - (주)퍼시픽나인 - 웹 백엔드 & 스트리밍 서버 개발中 2019
@@ -30,16 +29,8 @@
   - 2018 한이음ICT 멘토링(최종) · 2018
   - 공개 SW개발자 대회(최종) · 2018
   - 이공계 학술제(최우수상-총장상) · 2018
-- [얼굴인식을 통한 스마트 출석 `ICE SERVICE APP`][3]
-  - 정보통신종합설계1 · 2018
-- Health Care Wearable Device with Android App `To Be Ma`
-  - 용인디지털산업진흥원 메이커톤 · 2017
-- [Android App `나만의 비서 : NABI`][2]
-  - 2017 한이음ICT 멘토링 · 2017
-- Android App `Decision Maker` · 2016
 
 
-[2]: https://github.com/ggoowlgns/ggoowlgns.github.io/tree/master/docs/nabi
-[3]: https://github.com/ggoowlgns/ggoowlgns.github.io/tree/master/docs/isa
+
 [4]: https://github.com/ggoowlgns/ggoowlgns.github.io/tree/master/docs/vicer
 [5]: https://github.com/ggoowlgns/ggoowlgns.github.io/tree/master/docs/hufsgo
