@@ -1,5 +1,5 @@
 ---
-title:      "개발 노트 : Android - Kakao Map (작성중)"
+title:      "개발 노트 : Android - Kakao Map"
 subtitle:   "Developing with Kakao Map"
 date:       2019-08-16
 author:     "Park Ji Hoon"
