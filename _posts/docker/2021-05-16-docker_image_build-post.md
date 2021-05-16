@@ -1,5 +1,5 @@
 ---
-title:      "도커 이미지 빌드 & 최적화 하기"
+title:      "Docker Image Build & Optimization"
 subtitle:   "spring boot app"
 date:       2021-05-16
 author:     "Park Ji Hoon"
