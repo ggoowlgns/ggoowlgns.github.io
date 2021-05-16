@@ -1,13 +1,17 @@
 ---
-title:      "도커 이미지 빌드 & 최적화 하기"
-subtitle:   "spring boot app"
+title:      "Kubernetes Best Practices : 쿠버네티스 모범 사례 : Intro 3"
+subtitle:   "머리말 & 목차 정리"
 date:       2021-05-16
 author:     "Park Ji Hoon"
 header-img: "img/post_k8s/k8s-logo.png"
 header-mask: 0.3
 catalog:    True
+use_math: true
 tags:
+    - 책 리뷰
     - kubernetes
+    - k8s
+
 ---
 > Spring Boot App 을 Docker Image 로 build 하는데 고려해야하는 사항들을 정리했다.
 > spring boot project source : https://gitlab.com/marketing-blog/marketing-blog-dashboard-server
