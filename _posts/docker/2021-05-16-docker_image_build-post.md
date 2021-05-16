@@ -11,7 +11,7 @@ catalog:    True
 
 ---
 > Spring Boot App 을 Docker Image 로 build 하는데 고려해야하는 사항들을 정리했다.
-> spring boot project source : https://gitlab.com/marketing-blog/marketing-blog-dashboard-server
+> spring boot project source : [0][https://gitlab.com/marketing-blog/marketing-blog-dashboard-server]
 > [%] 의 표시 : 필자의 의견  
 
 ## Intro
@@ -369,6 +369,7 @@ ENTRYPOINT ["java","-jar","/app.jar"]
   - [https://perfectacle.github.io/2019/04/16/spring-boot-docker-image-optimization/][8]
 
 
+[0]:https://gitlab.com/marketing-blog/marketing-blog-dashboard-server
 [1]:https://parkgaebung.tistory.com/44
 [2]:https://bluese05.tistory.com/77 
 [3]:https://cultivo-hy.github.io/docker/image/usage/2019/03/14/Docker%EC%A0%95%EB%A6%AC/ 
