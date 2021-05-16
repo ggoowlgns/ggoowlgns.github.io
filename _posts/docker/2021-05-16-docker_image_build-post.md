@@ -152,7 +152,7 @@ ENTRYPOINT ["java","-jar","/app.jar"]
 ##### Spring Boot Docker Image 최적화 하기
 - 위와 같이 build 한 하나의 .jar 를 통째로 copy 하여 image 를 만들면 아주 조금의 Code fix 가 있어도 통째로 file 을 upload 하기 때문에 용량이 커진다.
 - build 한 jar 파일 내부를 보면
-  - ![](/img/post_docker/inside-spring-boot-jar.PNG)
+  - ![](/img/post_docker/inside-spring-boot-jar.png)
   - 개발자가 수정하는 부분은 classes 내부의 Code 인데, 3rd party lib 까지도 묶어서 image 로 push 를 하고 있었기 때문에 용량이 커지고 느려지는 상황이다.
   - 즉 레이어를 재활용(Caching)하기 위해서는 `Application Layer` 와 `3rd party library Layer`를 분리하여 운용해야 레이어 재사용률을 확장시킬수 있다.
   - [%] COPY 하는 Layer의 순서에 따라 재활용 하는 레이어가 달라진다.
