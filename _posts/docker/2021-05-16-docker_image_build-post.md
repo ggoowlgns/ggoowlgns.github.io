@@ -308,31 +308,31 @@ ENTRYPOINT ["java","-jar","/app.jar"]
     ```
 
     - Dockerfile :최종 결과물
-  ```dockerfile
-    FROM openjdk:8-jre-alpine
-    # 1. user, group 추가
-    RUN addgroup -S spring && adduser -S spring -G spring
+    ```dockerfile
+      FROM openjdk:8-jre-alpine
+      # 1. user, group 추가
+      RUN addgroup -S spring && adduser -S spring -G spring
 
-    # 2. 위에서 만든 user, group 으로 전환
-    USER spring:spring
+      # 2. 위에서 만든 user, group 으로 전환
+      USER spring:spring
 
-    # 3. spring boot build시에 생성되는 jar 파일 위치 등록
-    ARG APP_NAME=market-blog
-    ARG APP_DIR=target/unpack-app/
-    ARG LIB_DIR=target/unpack-lib/
+      # 3. spring boot build시에 생성되는 jar 파일 위치 등록
+      ARG APP_NAME=market-blog
+      ARG APP_DIR=target/unpack-app/
+      ARG LIB_DIR=target/unpack-lib/
 
-    # 4. workdir 생성,설정
-    RUN ["mkdir", "-p", "/home/spring/${APP_NAME}"]
-    WORKDIR /home/ggoowlgns/${APP_NAME}
+      # 4. workdir 생성,설정
+      RUN ["mkdir", "-p", "/home/spring/${APP_NAME}"]
+      WORKDIR /home/ggoowlgns/${APP_NAME}
 
-    # 4. src들 이동
-    COPY ${LIB_DIR} BOOT-INF/lib
-    COPY ${APP_DIR} .
+      # 4. src들 이동
+      COPY ${LIB_DIR} BOOT-INF/lib
+      COPY ${APP_DIR} .
 
-    # 5. 실행
-    ENV PROFILE=local
-    ENTRYPOINT ["java", "-Dspring.profiles.active=${PROFILE}","org.springframework.boot.loader.JarLauncher"]
-  ```
+      # 5. 실행
+      ENV PROFILE=local
+      ENTRYPOINT ["java", "-Dspring.profiles.active=${PROFILE}","org.springframework.boot.loader.JarLauncher"]
+    ```
     ENV 는 run 시에 overwrite 이 가능하다.
       - $ docker run -p 5000:8099 -e "PROFILE=prod" ggoowlgns/blog:0.0.1
 
