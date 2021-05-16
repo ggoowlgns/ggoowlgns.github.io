@@ -6,7 +6,6 @@ author:     "Park Ji Hoon"
 header-img: "img/post_docker/docker-logo.png"
 header-mask: 0.3
 catalog:    True
-use_math: true
     - docker
     - spring-boot
 
