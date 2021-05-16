@@ -7,7 +7,7 @@ header-img: "img/post_docker/docker-logo.png"
 header-mask: 0.3
 catalog:    True
     - docker
-    - spring-boot
+    - spring
 
 ---
 > Spring Boot App 을 Docker Image 로 build 하는데 고려해야하는 사항들을 정리했다.
