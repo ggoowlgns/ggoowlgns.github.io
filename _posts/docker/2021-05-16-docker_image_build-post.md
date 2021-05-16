@@ -340,17 +340,17 @@ ENTRYPOINT ["java","-jar","/app.jar"]
 
 
 #### 논외 정리
-- 논외 : JAVA OPTION 을 외부로 빼기
+- 논외:JAVA OPTION 을 외부로 빼기
 ```dockerfile
-[Dockerfile]
-FROM openjdk:8-jdk-alpine
-VOLUME /tmp
-ARG JAR_FILE=target/*.jar
-COPY ${JAR_FILE} app.jar
-ENTRYPOINT ["sh", "-c", "java ${JAVA_OPTS} -jar /app.jar"]
+  [Dockerfile]
+  FROM openjdk:8-jdk-alpine
+  VOLUME /tmp
+  ARG JAR_FILE=target/*.jar
+  COPY ${JAR_FILE} app.jar
+  ENTRYPOINT ["sh", "-c", "java ${JAVA_OPTS} -jar /app.jar"]
 
-[run]
-$ docker run -p 8080:8080 -e "JAVA_OPTS=-Ddebug -Xmx128m" myorg/myapp
+  [run]
+  $ docker run -p 8080:8080 -e "JAVA_OPTS=-Ddebug -Xmx128m" myorg/myapp
 ```
 
 
