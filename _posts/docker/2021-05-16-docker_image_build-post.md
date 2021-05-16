@@ -32,10 +32,10 @@ spring boot app 을 image 로 만드는 방법은 두가지가 있다.
 
 
 #### Dockerfile : 기본 문법
-> ref : https://docs.docker.com/engine/reference/builder/`
-```dockerfile
-#기본적인 Flow
+> ref : https://docs.docker.com/engine/reference/builder/
 
+```dockerfile
+# 기본적인 Flow
 # 1. Base Image 설정 ( + 만든사람 표시)
 FROM       openjdk:8-jdk-alpine
 MAINTAINER ggoowlgns@gmail.com
