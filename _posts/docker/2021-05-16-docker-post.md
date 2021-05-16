@@ -6,9 +6,8 @@ author:     "Park Ji Hoon"
 header-img: "img/post_docker/docker-logo.png"
 header-mask: 0.3
 catalog:    True
-use_math: true
 tags:
-    - docker
+    - kubernetes
 ---
 > Spring Boot App 을 Docker Image 로 build 하는데 고려해야하는 사항들을 정리했다.
 > spring boot project source : https://gitlab.com/marketing-blog/marketing-blog-dashboard-server
