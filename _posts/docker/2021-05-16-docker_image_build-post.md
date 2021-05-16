@@ -31,7 +31,7 @@ spring boot app 을 image 로 만드는 방법은 두가지가 있다.
 
 
 #### Dockerfile : 기본 문법
-> ref : https://docs.docker.com/engine/reference/builder/`
+> ref : https://docs.docker.com/engine/reference/builder/
 ```cmd
 #기본적인 Flow
 
@@ -184,7 +184,7 @@ ENTRYPOINT ["java","-jar","/app.jar"]
 
   - **pom.xml 에 Unpack plugin 추가**
     - pom.xml
-      - ```xml
+      - ```
         <?xml version="1.0" encoding="UTF-8"?>
             <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
