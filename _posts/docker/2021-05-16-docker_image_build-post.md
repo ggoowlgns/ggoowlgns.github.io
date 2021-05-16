@@ -161,138 +161,138 @@ ENTRYPOINT ["java","-jar","/app.jar"]
 - build jar unpack 하기
   - spring 공식 문서에는 cmd shell 명령어를 통해서 unpack 하는 방식이 소개됨
     - ref : https://spring.io/guides/topicals/spring-boot-docker
-    - ```dockerfile
-        FROM openjdk:8-jdk-alpine as build
-        WORKDIR /workspace/app
+```dockerfile
+      FROM openjdk:8-jdk-alpine as build
+      WORKDIR /workspace/app
 
-        COPY mvnw .
-        COPY .mvn .mvn
-        COPY pom.xml .
-        COPY src src
+      COPY mvnw .
+      COPY .mvn .mvn
+      COPY pom.xml .
+      COPY src src
 
-        RUN ./mvnw install -DskipTests
-        RUN mkdir -p target/dependency && (cd target/dependency; jar -xf ../*.jar)
+      RUN ./mvnw install -DskipTests
+      RUN mkdir -p target/dependency && (cd target/dependency; jar -xf ../*.jar)
 
-        FROM openjdk:8-jdk-alpine
-        VOLUME /tmp
-        ARG DEPENDENCY=/workspace/app/target/dependency
-        COPY --from=build ${DEPENDENCY}/BOOT-INF/lib /app/lib
-        COPY --from=build ${DEPENDENCY}/META-INF /app/META-INF
-        COPY --from=build ${DEPENDENCY}/BOOT-INF/classes /app
-        ENTRYPOINT ["java","-cp","app:app/lib/*","hello.Application"]
-      ```
+      FROM openjdk:8-jdk-alpine
+      VOLUME /tmp
+      ARG DEPENDENCY=/workspace/app/target/dependency
+      COPY --from=build ${DEPENDENCY}/BOOT-INF/lib /app/lib
+      COPY --from=build ${DEPENDENCY}/META-INF /app/META-INF
+      COPY --from=build ${DEPENDENCY}/BOOT-INF/classes /app
+      ENTRYPOINT ["java","-cp","app:app/lib/*","hello.Application"]
+```
     - `하지만 이보다 pom으로 unpack, 분리 하는 방법이 더 깔끔해 보여서 채택했다.`
 
   - **pom.xml 에 Unpack plugin 추가**
     - pom.xml
-      - ```xml
-        <?xml version="1.0" encoding="UTF-8"?>
-            <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
-                <modelVersion>4.0.0</modelVersion>
-                <parent>
-                    <groupId>org.springframework.boot</groupId>
-                    <artifactId>spring-boot-starter-parent</artifactId>
-                    <version>2.4.0</version>
-                    <relativePath/> <!-- lookup parent from repository -->
-                </parent>
-                <groupId>com.jhpark.marketing</groupId>
-                <artifactId>marketing-blog</artifactId>
-                <version>0.0.1</version>
-                <name>blog</name>
-                <description>Marketing Blog</description>
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+  <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+      <modelVersion>4.0.0</modelVersion>
+      <parent>
+          <groupId>org.springframework.boot</groupId>
+          <artifactId>spring-boot-starter-parent</artifactId>
+          <version>2.4.0</version>
+          <relativePath/> <!-- lookup parent from repository -->
+      </parent>
+      <groupId>com.jhpark.marketing</groupId>
+      <artifactId>marketing-blog</artifactId>
+      <version>0.0.1</version>
+      <name>blog</name>
+      <description>Marketing Blog</description>
 
-                <properties>
-                    <java.version>1.8</java.version>
-                    <jar.unpack.app.dir>${project.build.directory}/unpack-app</jar.unpack.app.dir>
-                    <jar.unpack.lib.dir>${project.build.directory}/unpack-lib</jar.unpack.lib.dir>
-                </properties>
+      <properties>
+          <java.version>1.8</java.version>
+          <jar.unpack.app.dir>${project.build.directory}/unpack-app</jar.unpack.app.dir>
+          <jar.unpack.lib.dir>${project.build.directory}/unpack-lib</jar.unpack.lib.dir>
+      </properties>
 
-                <dependencies>
+      <dependencies>
 
-                    <dependency>
-                        <groupId>org.springframework.boot</groupId>
-                        <artifactId>spring-boot-starter-freemarker</artifactId>
-                    </dependency>
-                    <dependency>
-                        <groupId>org.springframework.boot</groupId>
-                        <artifactId>spring-boot-starter-web</artifactId>
-                    </dependency>
+          <dependency>
+              <groupId>org.springframework.boot</groupId>
+              <artifactId>spring-boot-starter-freemarker</artifactId>
+          </dependency>
+          <dependency>
+              <groupId>org.springframework.boot</groupId>
+              <artifactId>spring-boot-starter-web</artifactId>
+          </dependency>
 
-                    <dependency>
-                        <groupId>org.springframework.boot</groupId>
-                        <artifactId>spring-boot-devtools</artifactId>
-                        <scope>runtime</scope>
-                        <optional>true</optional>
-                    </dependency>
-                    <dependency>
-                        <groupId>org.springframework.boot</groupId>
-                        <artifactId>spring-boot-starter-test</artifactId>
-                        <scope>test</scope>
-                    </dependency>
+          <dependency>
+              <groupId>org.springframework.boot</groupId>
+              <artifactId>spring-boot-devtools</artifactId>
+              <scope>runtime</scope>
+              <optional>true</optional>
+          </dependency>
+          <dependency>
+              <groupId>org.springframework.boot</groupId>
+              <artifactId>spring-boot-starter-test</artifactId>
+              <scope>test</scope>
+          </dependency>
 
-                </dependencies>
+      </dependencies>
 
-                <build>
-                    <finalName>${project.artifactId}-${project.version}</finalName>
-                    <plugins>
-                        <plugin>
-                            <groupId>org.springframework.boot</groupId>
-                            <artifactId>spring-boot-maven-plugin</artifactId>
-            <!--				<configuration>-->
-            <!--					<executable>true</executable>-->
-            <!--				</configuration>-->
-                        </plugin>
-                        <plugin>
-                            <groupId>org.apache.maven.plugins</groupId>
-                            <artifactId>maven-dependency-plugin</artifactId>
-                            <version>3.1.1</version>
-                            <executions>
-                                <execution>
-                                    <id>unpack</id>
-                                    <phase>package</phase>
-                                    <goals>
-                                        <goal>unpack</goal>
-                                    </goals>
-                                    <configuration>
-                                        <artifactItems>
-                                            <artifactItem>
-                                                <groupId>${project.groupId}</groupId>
-                                                <artifactId>${project.artifactId}</artifactId>
-                                                <version>${project.version}</version>
-                                                <destFileName>${project.build.finalName}</destFileName>
-                                            </artifactItem>
-                                        </artifactItems>
-                                        <outputDirectory>${jar.unpack.app.dir}</outputDirectory>
-                                    </configuration>
-                                </execution>
-                            </executions>
-                        </plugin>
-                        <plugin>
-                            <groupId>org.apache.maven.plugins</groupId>
-                            <artifactId>maven-antrun-plugin</artifactId>
-                            <executions>
-                                <execution>
-                                    <id>move-lib</id>
-                                    <phase>package</phase>
-                                    <configuration>
-                                        <target>
-                                            <move todir="${jar.unpack.lib.dir}">
-                                                <fileset dir="${jar.unpack.app.dir}/BOOT-INF/lib"/>
-                                            </move>
-                                        </target>
-                                    </configuration>
-                                    <goals>
-                                        <goal>run</goal>
-                                    </goals>
-                                </execution>
-                            </executions>
-                        </plugin>
+      <build>
+          <finalName>${project.artifactId}-${project.version}</finalName>
+          <plugins>
+              <plugin>
+                  <groupId>org.springframework.boot</groupId>
+                  <artifactId>spring-boot-maven-plugin</artifactId>
+  <!--				<configuration>-->
+  <!--					<executable>true</executable>-->
+  <!--				</configuration>-->
+              </plugin>
+              <plugin>
+                  <groupId>org.apache.maven.plugins</groupId>
+                  <artifactId>maven-dependency-plugin</artifactId>
+                  <version>3.1.1</version>
+                  <executions>
+                      <execution>
+                          <id>unpack</id>
+                          <phase>package</phase>
+                          <goals>
+                              <goal>unpack</goal>
+                          </goals>
+                          <configuration>
+                              <artifactItems>
+                                  <artifactItem>
+                                      <groupId>${project.groupId}</groupId>
+                                      <artifactId>${project.artifactId}</artifactId>
+                                      <version>${project.version}</version>
+                                      <destFileName>${project.build.finalName}</destFileName>
+                                  </artifactItem>
+                              </artifactItems>
+                              <outputDirectory>${jar.unpack.app.dir}</outputDirectory>
+                          </configuration>
+                      </execution>
+                  </executions>
+              </plugin>
+              <plugin>
+                  <groupId>org.apache.maven.plugins</groupId>
+                  <artifactId>maven-antrun-plugin</artifactId>
+                  <executions>
+                      <execution>
+                          <id>move-lib</id>
+                          <phase>package</phase>
+                          <configuration>
+                              <target>
+                                  <move todir="${jar.unpack.lib.dir}">
+                                      <fileset dir="${jar.unpack.app.dir}/BOOT-INF/lib"/>
+                                  </move>
+                              </target>
+                          </configuration>
+                          <goals>
+                              <goal>run</goal>
+                          </goals>
+                      </execution>
+                  </executions>
+              </plugin>
 
-                    </plugins>
-                </build>
-            </project>
-        ```
+          </plugins>
+      </build>
+  </project>
+```
         -> output
         ```
         target
@@ -307,31 +307,31 @@ ENTRYPOINT ["java","-jar","/app.jar"]
             └── ...
         ```
     - Dockerfile :최종 결과물
-        ```dockerfile
-        FROM openjdk:8-jre-alpine
-        # 1. user, group 추가
-        RUN addgroup -S spring && adduser -S spring -G spring
+  ```dockerfile
+  FROM openjdk:8-jre-alpine
+  # 1. user, group 추가
+  RUN addgroup -S spring && adduser -S spring -G spring
 
-        # 2. 위에서 만든 user, group 으로 전환
-        USER spring:spring
+  # 2. 위에서 만든 user, group 으로 전환
+  USER spring:spring
 
-        # 3. spring boot build시에 생성되는 jar 파일 위치 등록
-        ARG APP_NAME=market-blog
-        ARG APP_DIR=target/unpack-app/
-        ARG LIB_DIR=target/unpack-lib/
+  # 3. spring boot build시에 생성되는 jar 파일 위치 등록
+  ARG APP_NAME=market-blog
+  ARG APP_DIR=target/unpack-app/
+  ARG LIB_DIR=target/unpack-lib/
 
-        # 4. workdir 생성,설정
-        RUN ["mkdir", "-p", "/home/spring/${APP_NAME}"]
-        WORKDIR /home/ggoowlgns/${APP_NAME}
+  # 4. workdir 생성,설정
+  RUN ["mkdir", "-p", "/home/spring/${APP_NAME}"]
+  WORKDIR /home/ggoowlgns/${APP_NAME}
 
-        # 4. src들 이동
-        COPY ${LIB_DIR} BOOT-INF/lib
-        COPY ${APP_DIR} .
+  # 4. src들 이동
+  COPY ${LIB_DIR} BOOT-INF/lib
+  COPY ${APP_DIR} .
 
-        # 5. 실행
-        ENV PROFILE=local
-        ENTRYPOINT ["java", "-Dspring.profiles.active=${PROFILE}","org.springframework.boot.loader.JarLauncher"]
-        ```
+  # 5. 실행
+  ENV PROFILE=local
+  ENTRYPOINT ["java", "-Dspring.profiles.active=${PROFILE}","org.springframework.boot.loader.JarLauncher"]
+  ```
         ENV 는 run 시에 overwrite 이 가능하다.
          - $ docker run -p 5000:8099 -e "PROFILE=prod" ggoowlgns/blog:0.0.1
 
@@ -340,17 +340,17 @@ ENTRYPOINT ["java","-jar","/app.jar"]
 
 #### 논외 정리
 - 논외 : JAVA OPTION 을 외부로 빼기
-    ```dockerfile
-    [Dockerfile]
-    FROM openjdk:8-jdk-alpine
-    VOLUME /tmp
-    ARG JAR_FILE=target/*.jar
-    COPY ${JAR_FILE} app.jar
-    ENTRYPOINT ["sh", "-c", "java ${JAVA_OPTS} -jar /app.jar"]
+```dockerfile
+[Dockerfile]
+FROM openjdk:8-jdk-alpine
+VOLUME /tmp
+ARG JAR_FILE=target/*.jar
+COPY ${JAR_FILE} app.jar
+ENTRYPOINT ["sh", "-c", "java ${JAVA_OPTS} -jar /app.jar"]
 
-    [run]
-    $ docker run -p 8080:8080 -e "JAVA_OPTS=-Ddebug -Xmx128m" myorg/myapp
-    ```
+[run]
+$ docker run -p 8080:8080 -e "JAVA_OPTS=-Ddebug -Xmx128m" myorg/myapp
+```
 
 
 ## 참고 자료들
