@@ -356,7 +356,6 @@ $ docker run -p 8080:8080 -e "JAVA_OPTS=-Ddebug -Xmx128m" myorg/myapp
 ## 참고 자료들
 - [ADD, COPY 차이][1]
 - [CMD, ENTRYPOINT 차이][2]
-- 
 
 - [Docker 문법 정리]
   - [https://cultivo-hy.github.io/docker/image/usage/2019/03/14/Docker%EC%A0%95%EB%A6%AC/][3]
