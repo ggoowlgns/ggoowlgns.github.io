@@ -293,21 +293,21 @@ ENTRYPOINT ["java","-jar","/app.jar"]
           </build>
       </project>
     ```
-        -> output
-        ```
-        target
-        ├── _config.yml
-        ├── unpack-app
-        │   ├── BOOT-INF
-        │   │   └── classes (개발자가 작성한 source code)
-        │   ├── META-INF
-        │   └── org
-        └── unpack-lib
-            ├── 각종 3rd party lib 들 (BOOT-INF/lib 에 있던 jar 들)
-            └── ...
-        ```
+    -> output
+    ```
+    target
+    ├── _config.yml
+    ├── unpack-app
+    │   ├── BOOT-INF
+    │   │   └── classes (개발자가 작성한 source code)
+    │   ├── META-INF
+    │   └── org
+    └── unpack-lib
+        ├── 각종 3rd party lib 들 (BOOT-INF/lib 에 있던 jar 들)
+        └── ...
+    ```
     - Dockerfile :최종 결과물
-  ```dockerfile
+```dockerfile
   FROM openjdk:8-jre-alpine
   # 1. user, group 추가
   RUN addgroup -S spring && adduser -S spring -G spring
@@ -331,9 +331,9 @@ ENTRYPOINT ["java","-jar","/app.jar"]
   # 5. 실행
   ENV PROFILE=local
   ENTRYPOINT ["java", "-Dspring.profiles.active=${PROFILE}","org.springframework.boot.loader.JarLauncher"]
-  ```
-        ENV 는 run 시에 overwrite 이 가능하다.
-         - $ docker run -p 5000:8099 -e "PROFILE=prod" ggoowlgns/blog:0.0.1
+```
+    ENV 는 run 시에 overwrite 이 가능하다.
+      - $ docker run -p 5000:8099 -e "PROFILE=prod" ggoowlgns/blog:0.0.1
 
 
 
