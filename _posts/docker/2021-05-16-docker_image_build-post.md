@@ -185,114 +185,114 @@ ENTRYPOINT ["java","-jar","/app.jar"]
 
   - **pom.xml 에 Unpack plugin 추가**
     - pom.xml
-```xml
-<?xml version="1.0" encoding="UTF-8"?>
-  <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
-      <modelVersion>4.0.0</modelVersion>
-      <parent>
-          <groupId>org.springframework.boot</groupId>
-          <artifactId>spring-boot-starter-parent</artifactId>
-          <version>2.4.0</version>
-          <relativePath/> <!-- lookup parent from repository -->
-      </parent>
-      <groupId>com.jhpark.marketing</groupId>
-      <artifactId>marketing-blog</artifactId>
-      <version>0.0.1</version>
-      <name>blog</name>
-      <description>Marketing Blog</description>
-
-      <properties>
-          <java.version>1.8</java.version>
-          <jar.unpack.app.dir>${project.build.directory}/unpack-app</jar.unpack.app.dir>
-          <jar.unpack.lib.dir>${project.build.directory}/unpack-lib</jar.unpack.lib.dir>
-      </properties>
-
-      <dependencies>
-
-          <dependency>
+    ```xml
+    <?xml version="1.0" encoding="UTF-8"?>
+      <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+          <modelVersion>4.0.0</modelVersion>
+          <parent>
               <groupId>org.springframework.boot</groupId>
-              <artifactId>spring-boot-starter-freemarker</artifactId>
-          </dependency>
-          <dependency>
-              <groupId>org.springframework.boot</groupId>
-              <artifactId>spring-boot-starter-web</artifactId>
-          </dependency>
+              <artifactId>spring-boot-starter-parent</artifactId>
+              <version>2.4.0</version>
+              <relativePath/> <!-- lookup parent from repository -->
+          </parent>
+          <groupId>com.jhpark.marketing</groupId>
+          <artifactId>marketing-blog</artifactId>
+          <version>0.0.1</version>
+          <name>blog</name>
+          <description>Marketing Blog</description>
 
-          <dependency>
-              <groupId>org.springframework.boot</groupId>
-              <artifactId>spring-boot-devtools</artifactId>
-              <scope>runtime</scope>
-              <optional>true</optional>
-          </dependency>
-          <dependency>
-              <groupId>org.springframework.boot</groupId>
-              <artifactId>spring-boot-starter-test</artifactId>
-              <scope>test</scope>
-          </dependency>
+          <properties>
+              <java.version>1.8</java.version>
+              <jar.unpack.app.dir>${project.build.directory}/unpack-app</jar.unpack.app.dir>
+              <jar.unpack.lib.dir>${project.build.directory}/unpack-lib</jar.unpack.lib.dir>
+          </properties>
 
-      </dependencies>
+          <dependencies>
 
-      <build>
-          <finalName>${project.artifactId}-${project.version}</finalName>
-          <plugins>
-              <plugin>
+              <dependency>
                   <groupId>org.springframework.boot</groupId>
-                  <artifactId>spring-boot-maven-plugin</artifactId>
-  <!--				<configuration>-->
-  <!--					<executable>true</executable>-->
-  <!--				</configuration>-->
-              </plugin>
-              <plugin>
-                  <groupId>org.apache.maven.plugins</groupId>
-                  <artifactId>maven-dependency-plugin</artifactId>
-                  <version>3.1.1</version>
-                  <executions>
-                      <execution>
-                          <id>unpack</id>
-                          <phase>package</phase>
-                          <goals>
-                              <goal>unpack</goal>
-                          </goals>
-                          <configuration>
-                              <artifactItems>
-                                  <artifactItem>
-                                      <groupId>${project.groupId}</groupId>
-                                      <artifactId>${project.artifactId}</artifactId>
-                                      <version>${project.version}</version>
-                                      <destFileName>${project.build.finalName}</destFileName>
-                                  </artifactItem>
-                              </artifactItems>
-                              <outputDirectory>${jar.unpack.app.dir}</outputDirectory>
-                          </configuration>
-                      </execution>
-                  </executions>
-              </plugin>
-              <plugin>
-                  <groupId>org.apache.maven.plugins</groupId>
-                  <artifactId>maven-antrun-plugin</artifactId>
-                  <executions>
-                      <execution>
-                          <id>move-lib</id>
-                          <phase>package</phase>
-                          <configuration>
-                              <target>
-                                  <move todir="${jar.unpack.lib.dir}">
-                                      <fileset dir="${jar.unpack.app.dir}/BOOT-INF/lib"/>
-                                  </move>
-                              </target>
-                          </configuration>
-                          <goals>
-                              <goal>run</goal>
-                          </goals>
-                      </execution>
-                  </executions>
-              </plugin>
+                  <artifactId>spring-boot-starter-freemarker</artifactId>
+              </dependency>
+              <dependency>
+                  <groupId>org.springframework.boot</groupId>
+                  <artifactId>spring-boot-starter-web</artifactId>
+              </dependency>
 
-          </plugins>
-      </build>
-  </project>
-```
+              <dependency>
+                  <groupId>org.springframework.boot</groupId>
+                  <artifactId>spring-boot-devtools</artifactId>
+                  <scope>runtime</scope>
+                  <optional>true</optional>
+              </dependency>
+              <dependency>
+                  <groupId>org.springframework.boot</groupId>
+                  <artifactId>spring-boot-starter-test</artifactId>
+                  <scope>test</scope>
+              </dependency>
+
+          </dependencies>
+
+          <build>
+              <finalName>${project.artifactId}-${project.version}</finalName>
+              <plugins>
+                  <plugin>
+                      <groupId>org.springframework.boot</groupId>
+                      <artifactId>spring-boot-maven-plugin</artifactId>
+      <!--				<configuration>-->
+      <!--					<executable>true</executable>-->
+      <!--				</configuration>-->
+                  </plugin>
+                  <plugin>
+                      <groupId>org.apache.maven.plugins</groupId>
+                      <artifactId>maven-dependency-plugin</artifactId>
+                      <version>3.1.1</version>
+                      <executions>
+                          <execution>
+                              <id>unpack</id>
+                              <phase>package</phase>
+                              <goals>
+                                  <goal>unpack</goal>
+                              </goals>
+                              <configuration>
+                                  <artifactItems>
+                                      <artifactItem>
+                                          <groupId>${project.groupId}</groupId>
+                                          <artifactId>${project.artifactId}</artifactId>
+                                          <version>${project.version}</version>
+                                          <destFileName>${project.build.finalName}</destFileName>
+                                      </artifactItem>
+                                  </artifactItems>
+                                  <outputDirectory>${jar.unpack.app.dir}</outputDirectory>
+                              </configuration>
+                          </execution>
+                      </executions>
+                  </plugin>
+                  <plugin>
+                      <groupId>org.apache.maven.plugins</groupId>
+                      <artifactId>maven-antrun-plugin</artifactId>
+                      <executions>
+                          <execution>
+                              <id>move-lib</id>
+                              <phase>package</phase>
+                              <configuration>
+                                  <target>
+                                      <move todir="${jar.unpack.lib.dir}">
+                                          <fileset dir="${jar.unpack.app.dir}/BOOT-INF/lib"/>
+                                      </move>
+                                  </target>
+                              </configuration>
+                              <goals>
+                                  <goal>run</goal>
+                              </goals>
+                          </execution>
+                      </executions>
+                  </plugin>
+
+              </plugins>
+          </build>
+      </project>
+    ```
         -> output
         ```
         target
