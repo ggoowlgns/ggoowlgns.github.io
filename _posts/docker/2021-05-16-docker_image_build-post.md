@@ -354,16 +354,27 @@ ENTRYPOINT ["java","-jar","/app.jar"]
 
 
 ## 참고 자료들
-- https://parkgaebung.tistory.com/44 [ADD, COPY 차이]
-- https://bluese05.tistory.com/77 [CMD, ENTRYPOINT 차이]
+- [ADD, COPY 차이][1]
+- [CMD, ENTRYPOINT 차이][2]
+- 
 
 - [Docker 문법 정리]
-  - https://cultivo-hy.github.io/docker/image/usage/2019/03/14/Docker%EC%A0%95%EB%A6%AC/ 
-  - https://freedeveloper.tistory.com/189?category=808752
+  - [https://cultivo-hy.github.io/docker/image/usage/2019/03/14/Docker%EC%A0%95%EB%A6%AC/][3]
+  - [https://freedeveloper.tistory.com/189?category=808752][4]
 
 
 - [spring boot image 최적화]
-  - https://spring.io/guides/gs/spring-boot-docker/
-  - https://spring.io/guides/topicals/spring-boot-docker
-  - https://www.reimaginer.me/entry/optimize-spring-boot-dockerfile-on-maven 
-  - https://perfectacle.github.io/2019/04/16/spring-boot-docker-image-optimization/
+  - [https://spring.io/guides/gs/spring-boot-docker/][5]
+  - [https://spring.io/guides/topicals/spring-boot-docker][6]
+  - [https://www.reimaginer.me/entry/optimize-spring-boot-dockerfile-on-maven][7]
+  - [https://perfectacle.github.io/2019/04/16/spring-boot-docker-image-optimization/][8]
+
+
+[1]:https://parkgaebung.tistory.com/44
+[2]:https://bluese05.tistory.com/77 
+[3]:https://cultivo-hy.github.io/docker/image/usage/2019/03/14/Docker%EC%A0%95%EB%A6%AC/ 
+[4]:https://freedeveloper.tistory.com/189?category=808752
+[5]:https://spring.io/guides/gs/spring-boot-docker/
+[6]:https://spring.io/guides/topicals/spring-boot-docker
+[7]:https://www.reimaginer.me/entry/optimize-spring-boot-dockerfile-on-maven
+[8]:https://perfectacle.github.io/2019/04/16/spring-boot-docker-image-optimization/
