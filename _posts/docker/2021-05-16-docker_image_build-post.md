@@ -105,7 +105,7 @@ CMD  ["java", "-jar", "/src/target/app.jar]
   - image 에 환경변수 설정
   - `ENV [key] [value]`
   - Example
-    ```
+    ```dockerfile
     ENV DIRPATH /first
     ENV DIRNAME second
     WORKDIR $DIRPATH/$DIRNAME
@@ -115,7 +115,7 @@ CMD  ["java", "-jar", "/src/target/app.jar]
 - USER
   - 실행하는 user setting : 보안 이슈등을 고려하여 설정하는게 좋다. (default : root)
   - Example
-    ```
+    ```dockerfile
     RUN ["adduser", "asa"]
     RUN ["whoami"]
     USER asa
@@ -124,7 +124,8 @@ CMD  ["java", "-jar", "/src/target/app.jar]
 
 
 
-#### Dockerfile : Spring boot 
+#### Dockerfile : Spring boot
+
 > https://spring.io/guides/gs/spring-boot-docker/
 
 **기본 Dockerfile**
