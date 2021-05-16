@@ -8,7 +8,7 @@ header-mask: 0.3
 catalog:    True
 use_math: true
     - docker
-    - spring boot
+    - spring-boot
 
 ---
 > Spring Boot App 을 Docker Image 로 build 하는데 고려해야하는 사항들을 정리했다.
