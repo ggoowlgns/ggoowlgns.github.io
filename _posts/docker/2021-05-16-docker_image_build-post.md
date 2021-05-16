@@ -13,7 +13,6 @@ tags:
 ---
 > Spring Boot App 을 Docker Image 로 build 하는데 고려해야하는 사항들을 정리했다.
 > spring boot project source : https://gitlab.com/marketing-blog/marketing-blog-dashboard-server
-> 
 > [%] 의 표시 : 필자의 의견  
 
 ## Intro
