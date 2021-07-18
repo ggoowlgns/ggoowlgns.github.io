@@ -84,7 +84,7 @@ ga_track_id: 'UA-144235823-1'            # Format: UA-xxxxxx-xx
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "MEMBER OF HUFS ICE |           ESE LAB"
+sidebar-about-description: "MEMBER OF Netmarble"
 sidebar-avatar: /img/vicer_logo.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
@@ -113,12 +113,8 @@ friends: [
     #     href: "http://su.gallery/"
     # },
     {
-        title: "HUFS ICE",
-        href: "http://ice.hufs.ac.kr/"
-    },
-    {
-      title: "ESE LAB",
-      href : "http://eselab.hufs.ac.kr/"
+        title: "Netmarble Company",
+        href: "https://company.netmarble.com/"
     }
     #,{
 #         title: "前端外刊评论",
